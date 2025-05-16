@@ -1,0 +1,338 @@
+/* WhatsApp Chat Analyzer Custom Styles */
+
+/* Main color scheme based on WhatsApp branding */
+:root {
+    --primary-color: #075E54;
+    --secondary-color: #128C7E;
+    --accent-color: #25D366;
+    --light-color: #DCF8C6;
+    --text-color: #333333;
+    --background-color: #F5F5F5;
+    --card-background: #FFFFFF;
+}
+
+/* Main container styling */
+.main {
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+/* Header styling */
+.main-header {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.sub-header {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Card styling */
+.card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Statistics display */
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Sidebar styling */
+.sidebar-content {
+    padding: 20px 0;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #666;
+    background-color: var(--light-color);
+    border-radius: 10px;
+}
+
+/* User information display */
+.user-info {
+    padding: 15px;
+    background-color: var(--secondary-color); 
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Login container */
+.login-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.btn-custom {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--primary-color);
+}
+
+/* Section divider */
+.section-divider {
+    margin: 40px 0;
+    border-top: 1px solid #ddd;
+}
+
+/* File uploader */
+.uploadedFile {
+    border: 2px dashed var(--accent-color);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--light-color);
+}
+
+/* Tables and dataframes */
+.dataframe {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dataframe th {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 8px;
+}
+
+.dataframe td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Loading spinner */
+.stSpinner > div {
+    border-top-color: var(--accent-color) !important;
+}
+
+/* Chart styling */
+.chart-container {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Download button styling */
+.stDownloadButton button {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px 20px !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+    width: 100% !important;
+    margin: 10px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.stDownloadButton button:hover {
+    background-color: var(--primary-color) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.download-section {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+    }
+    
+    .main-header {
+        font-size: 2rem;
+    }
+    
+    .sub-header {
+        font-size: 1.2rem;
+    }
+}
+
+/* Emoji Analysis Styling */
+
+/* Emoji table styling */
+.emoji-table {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-table th {
+    background-color: #128C7E;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.emoji-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.emoji-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.emoji-cell {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+/* Emoji card animations */
+.card:has(.emoji-cell) {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:has(.emoji-cell):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Emoji statistics styling */
+.emoji-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.emoji-stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border-left: 4px solid #128C7E;
+}
+
+/* Emoji chart containers */
+.emoji-chart-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.emoji-chart-container h3 {
+    color: #128C7E;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Enhance emoji bar chart */
+.emoji-bar-chart .matplotlib-figure {
+    margin: 0 auto;
+}
+
+/* Emoji pie chart */
+.emoji-pie-chart {
+    margin-top: 10px;
+}
+
+/* Responsive emoji display */
+@media (max-width: 768px) {
+    .emoji-table {
+        font-size: 0.9rem;
+    }
+    
+    .emoji-cell {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animation for emoji frequency */
+@keyframes highlight {
+    0% {
+        background-color: rgba(37, 211, 102, 0.1);
+    }
+    50% {
+        background-color: rgba(37, 211, 102, 0.2);
+    }
+    100% {
+        background-color: rgba(37, 211, 102, 0.1);
+    }
+}
+
+.emoji-table tr:nth-child(1) {
+    animation: highlight 2s infinite;
+}
+
+/* Top emoji highlight */
+.top-emoji-highlight {
+    position: relative;
+}
+
+.top-emoji-highlight::after {
+    content: "Most Used";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #25D366;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    transform: rotate(15deg);
+}
